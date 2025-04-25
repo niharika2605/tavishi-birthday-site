@@ -1,0 +1,158 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tavishi Birthday Quiz 🎉</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #cba6f7, #e9d2fc);
+      color: #4b0082;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    h1 {
+      font-size: 2.8rem;
+      color: #7c3aed;
+      margin-bottom: 30px;
+    }
+    .quiz-container {
+      max-width: 700px;
+      margin: 0 auto;
+      background: #ffffffdd;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+    .question {
+      margin-bottom: 25px;
+    }
+    .question h3 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+    .question label {
+      display: block;
+      margin: 6px 0;
+      cursor: pointer;
+    }
+    button {
+      background-color: #7c3aed;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button:hover {
+      background-color: #5b21b6;
+    }
+    #result {
+      margin-top: 30px;
+      font-size: 1.4rem;
+      color: #6b21a8;
+    }
+    .back-home {
+      margin-top: 40px;
+    }
+    .back-home a {
+      background-color: #7c3aed;
+      color: white;
+      padding: 12px 30px;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .back-home a:hover {
+      background-color: #5b21b6;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>How Well Do You Know Tavishi? 💜</h1>
+
+  <div class="quiz-container">
+    <form id="quizForm">
+      <div class="question">
+        <h3>1. What is Tavishi’s favorite hobby?</h3>
+        <label><input type="radio" name="q1" value="singing"> Singing</label>
+        <label><input type="radio" name="q1" value="fishing"> fishing</label>
+        <label><input type="radio" name="q1" value="football"> football</label>
+      </div>
+
+      <div class="question">
+        <h3>2. Which movie is her all-time favorite romantic classic in the following?</h3>
+        <label><input type="radio" name="q2" value="ironman"> Ironman</label>
+        <label><input type="radio" name="q2" value="aashiqui 2"> Aashiqui 2</label>
+        <label><input type="radio" name="q2" value="mission impossible"> Mission Impossible</label>
+      </div>
+
+      <div class="question">
+        <h3>3. What musical instrument can Tavishi play?</h3>
+        <label><input type="radio" name="q3" value="piano"> Piano</label>
+        <label><input type="radio" name="q3" value="guitar"> Guitar</label>
+        <label><input type="radio" name="q3" value="violin"> Violin</label>
+      </div>
+
+      <div class="question">
+        <h3>4. What is her favorite song?</h3>
+        <label><input type="radio" name="q4" value="tum hi aana"> Tum Hi Aana</label>
+        <label><input type="radio" name="q4" value="zara zara"> Zara Zara</label>
+        <label><input type="radio" name="q4" value="abhi na jao chod kar"> Abhi Na Jao Chhod Kar</label>
+      </div>
+
+      <div class="question">
+        <h3>5. What is one thing Tavishi always brings to a hangout?</h3>
+        <label><input type="radio" name="q5" value="vegetable"> Vegetable</label>
+        <label><input type="radio" name="q5" value="good vibes"> Good Vibes</label>
+        <label><input type="radio" name="q5" value="tennis ball"> Tennis Ball</label>
+      </div>
+
+      <div class="question">
+        <h3>6. One thing Tavishi can't live without?</h3>
+        <label><input type="radio" name="q6" value="niharika jain"> Niharika Jain</label>
+        <label><input type="radio" name="q6" value="niharika jain"> Niharika Jain</label>
+        <label><input type="radio" name="q6" value="niharika jain"> Niharika Jain</label>
+      </div>
+
+      <button type="button" onclick="checkAnswers()">Submit Answers</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <div class="back-home">
+    <a href="index.html">Back to Home</a>
+  </div>
+
+  <script>
+    function checkAnswers() {
+      const answers = {
+        q1: "singing",
+        q2: "aashiqui 2",
+        q3: "guitar",
+        q4: "abhi na jao chod kar",
+        q5: "good vibes",
+        q6: "niharika jain"
+      };
+
+      let score = 0;
+      for (let key in answers) {
+        const selected = document.querySelector(`input[name="${key}"]:checked`);
+        if (selected && selected.value === answers[key]) {
+          score++;
+        }
+      }
+
+      document.getElementById("result").innerText =
+        `You got ${score} out of 6 correct! 💜 Tavishi would be proud!`;
+    }
+  </script>
+
+</body>
+</html>

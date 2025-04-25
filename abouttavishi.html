@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Tavishi 💜</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #9b4dca, #b88bcc);
+      color: white;
+      overflow-x: hidden;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      color: #ffffff;
+    }
+
+    .hero h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3.5rem;
+      color: #f1c6e7;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      color: #f8d0e6;
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.5;
+      margin-bottom: 30px;
+    }
+
+    .hero img {
+      width: 60%;
+      max-width: 250px;
+      border-radius: 50%;
+      border: 6px solid #f1c6e7;
+      margin: 20px 0;
+      box-shadow: 0 10px 25px rgba(255, 105, 180, 0.3);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    .section {
+      padding: 40px 20px;
+      margin-top: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .section h2 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.5rem;
+      text-align: center;
+      color: #f1c6e7;
+      margin-bottom: 20px;
+    }
+
+    .section p, .section ul li {
+      font-size: 1.1rem;
+      color: #f8d0e6;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .movie-images {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+
+    .movie-images img {
+      width: 100px;
+      height: 140px;
+      border-radius: 8px;
+      object-fit: cover;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .movie-images img:hover {
+      transform: scale(1.05);
+    }
+
+    .nav-links {
+      text-align: center;
+      margin: 30px auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      max-width: 600px;
+    }
+
+    .nav-links a {
+      padding: 10px 20px;
+      background-color: #ffc1e3;
+      color: #880e4f;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+      font-weight: bold;
+    }
+
+    .nav-links a:hover {
+      background-color: #f48fb1;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    .quote-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 30px 0;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(142, 36, 170, 0.15);
+    }
+
+    .quote-text {
+      color: #f8d0e6;
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .quote-img img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(123, 31, 162, 0.3);
+    }
+
+    audio {
+      width: 90%;
+      max-width: 400px;
+      display: block;
+      margin: 10px auto;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2.3rem;
+      }
+      .hero p, .section p, .section ul li, .quote-text {
+        font-size: 1rem;
+      }
+      .movie-images img {
+        width: 80px;
+        height: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <h1>About Tavishi 💜</h1>
+    <p>Tavishi our amazing friend, full of life, and a unique personality. She lights up every room she walks into and we love her so much!</p>
+    <img src="tavishi2.jpg" alt="Birthday Girl Tavishi">
+  </div>
+
+  <div class="section">
+    <h2>Hobbies 🎤💃🎸</h2>
+    <ul>
+      <li>Singing 🎤</li>
+      <li>Dancing 💃</li>
+      <li>Playing Guitar 🎸</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Favorite Movies 🍿</h2>
+    <ul>
+      <li>Aashiqui 2</li>
+      <li>Ek Villian</li>
+      <li>Veer Zara</li>
+      <li>Om Shanti Om</li>
+      <li>Jab We Met</li>
+    </ul>
+    <div class="movie-images">
+      <img src="aashiqui 2.jpg" alt="Aashiqui 2">
+      <img src="ek villian.jpg" alt="Ek Villian">
+      <img src="veer zara.jpg" alt="Veer Zara">
+      <img src="Om shanti om.jpg" alt="Om Shanti Om">
+      <img src="jab we met.jpg" alt="Jab We Met">
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Favorite Songs 🎶</h2>
+    <p>These are some of Tavishi’s favorite soulful songs that she loves to listen to:</p>
+    <ul>
+      <li>Tere liye</li>
+      <li>Do Pal</li>
+      <li>Chahun main ya na</li>
+    </ul>
+    <div style="text-align: center;">
+      <p style="font-size: 1.1rem;"> 🎧 Tap to Listen:</p>
+
+      <p>Tere liye</p>
+      <audio controls>
+        <source src="TERE_LIYE___VEER_ZAARA___SHAH_RUKH_KHAN___PREITTY_ZINTA___AMITABH.mp3" type="audio/mpeg">
+      </audio>
+
+      <p style="margin-top: 20px;">Do pal</p>
+      <audio controls>
+        <source src="Late Madan Mohan - Do Pal (From  Veer-Zaara ).mp3" type="audio/mpeg">
+      </audio>
+
+      <p style="margin-top: 20px;">Chahun main ya na</p>
+      <audio controls>
+        <source src="Chahun_Main_ya_na_Lyrics_Aashiqui_2_Arijit_Singh_Palak_DarZDzAvba0.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>🌸Kaisi Ho Sakhi, Sukh Main Toh Ho? 🌸</h2>
+
+    <div class="quote-card">
+      <div class="quote-text">
+        <p>~ कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।</p>
+      </div>
+      <div class="quote-img">
+        <img src="quote1.jpg" alt="Quote Image 1">
+      </div>
+    </div>
+
+    <div class="quote-card">
+      <div class="quote-text">
+        <p>~ जो हुआ, वह अच्छे के लिए हुआ; जो हो रहा है, वह ओर अच्छे के लिए हो रहा है...</p>
+      </div>
+      <div class="quote-img">
+        <img src="quote2.jpg" alt="Quote Image 2">
+      </div>
+    </div>
+
+    <div class="quote-card">
+      <div class="quote-text">
+        <p>~ अपने कर्तव्यों का पालन करो, बिना किसी भय या संदेह के।</p>
+      </div>
+      <div class="quote-img">
+        <img src="quote3.jpg" alt="Quote Image 3">
+      </div>
+    </div>
+
+    <div class="quote-card">
+      <div class="quote-text">
+        <p>~ स्वयं पर विश्वास करना ही सफलता की कुंजी है।</p>
+      </div>
+      <div class="quote-img">
+        <img src="quote4.jpg" alt="Quote Image 4">
+      </div>
+    </div>
+
+    <div class="quote-card">
+      <div class="quote-text">
+        <p>~ प्रेरणा का सबसे बड़ा स्रोत आपके अपने विचार हैं, इसलिए बड़ा सोचे और खुद को जितने के लिए हॅमेशा प्रेरित करें।</p>
+      </div>
+      <div class="quote-img">
+        <img src="quote5.jpg" alt="Quote Image 5">
+      </div>
+    </div>
+
+    <div class="quote-card">
+      <div class="quote-text">
+        <p>~ कान्हा सदैव तुम्हारे साथ हैं सखी।</p>
+      </div>
+      <div class="quote-img">
+        <img src="quote6.jpg" alt="Quote Image 6">
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-links">
+    <a href="index.html">Back to Home</a>
+    <a href="wishes.html">Read Wishes</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="timeline.html">Memories</a>
+  </div>
+</body>
+</html>
